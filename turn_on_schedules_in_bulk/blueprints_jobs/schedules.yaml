@@ -1,0 +1,13 @@
+- type: scheduled_job
+  name: orders_schedule
+  schedule_type: "asset_grouping_1"
+  schedule_expiration: 2024-10-14
+  cron: "*/10 * * * *"
+  assets: [orders]
+
+- type: scheduled_job
+  name: orders_schedule_2
+  schedule_type: "asset_grouping_1"
+  schedule_expiration: 2024-10-17
+  cron: "* * * * *"
+  assets: [orders]
